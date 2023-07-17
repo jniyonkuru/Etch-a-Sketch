@@ -1,5 +1,5 @@
 
-let gridSize=50;
+let gridSize=16;
 const container=document.querySelector('.container');
 const div=document.createElement('div');
 div.style.width=`${600/gridSize}px`;
@@ -10,3 +10,19 @@ for(let i=0;i<gridSize*gridSize;i++){
     container.appendChild(div.cloneNode(true));
     
 }
+ const  grids=document.querySelectorAll('.item');
+
+// create a  mouseover event handler function
+function changeGridBackground(e){
+    e.target.style.background='#000';
+}
+// add an eventListener to each grid item;
+
+grids.forEach(div=>div.addEventListener('mouseover',changeGridBackground));
+
+
+
+
+
+
+
