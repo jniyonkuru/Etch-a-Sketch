@@ -1,10 +1,18 @@
+
+:root{
+--primary-color:#000;
+--secondary-color:#140101;
+}
+
+
 *,::after,::before{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 html{
-    color:rgb(80, 77, 77)
+    color:rgb(80, 77, 77);
+    background: url(./images/background.jpg);
 }
 
 h1{
@@ -12,7 +20,7 @@ h1{
     font-weight: 900;
     text-align:center;
     margin-bottom: 50px;
-    text-shadow: 4px 4px  3px rgb(116, 112, 112);
+    text-shadow: 4px 4px  3px var(--primary-color);
     
 }
 
@@ -25,6 +33,7 @@ h1{
     box-shadow: 0 0 10px black;
     border-radius: 15px;
     overflow: hidden;
+    background:#e6e1e1;
 }
 .main{
     display: flex;
@@ -50,13 +59,50 @@ font-weight: 900;
 border-radius: 20px;
 border: none;
 box-shadow: 0 0 10px black;
-transition: all 0.7s;
-color:rgb(80, 77, 77);
+transition: all ease;
+color:var(--secondary-color);
+margin-top:30px;
 }
 #btn:hover{
     transform: scale(1.03);
 
 }
+input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 10rem;
+    margin-top: -20px;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    background:#fff;
+    height: 1rem;
+    border-radius: 5px;
+  }
+
+input[type="range"]::-moz-range-track {
+    background:rgb(80, 77, 77);
+    height: 1rem;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -10px;
+    background-color:var(--secondary-color);
+    height: 2rem;
+    width: 2rem;  
+    border-radius: 50%;  
+ }
+
+ .size{
+ width:max-content;
+ height: 50px;
+ font-size: 42px;
+ font-weight: bolder;
+ }
+
+
 .message{
  width:max-content;
  height: 50px;
