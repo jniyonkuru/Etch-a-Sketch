@@ -1,6 +1,6 @@
 
 let gridSize=16;
-const  slideBar=document.querySelector('input[type="range"]');
+const slideBar=document.querySelector('input[type="range"]');
 const sizeDisplay=document.querySelector('.size');
 const message=document.querySelector('.message');
 const container=document.querySelector('.container');
@@ -10,6 +10,8 @@ div.style.width=`${400/gridSize}px`;
 div.style.height=`${400/gridSize}px`;
 sizeDisplay.textContent=`${slideBar.value}X${slideBar.value}`;
 div.classList.add('item');
+
+button.addEventListener('click',clearBoard)
 slideBar.addEventListener("input",updateGrid)
 
 for(let i=0;i<gridSize*gridSize;i++){
@@ -49,6 +51,28 @@ grids.forEach(div=>div.addEventListener('mouseover',changeGridBackground));
 
 }
 
+//  a function  that clear the board
+
+function clearBoard(e){
+container.innerHTML=''; 
+slideBar.value=16;  
+div.style.width=`${400/gridSize}px`;
+div.style.height=`${400/gridSize}px`;
+sizeDisplay.textContent=`${slideBar.value}X${slideBar.value}`;
+div.classList.add('item');
+
+button.addEventListener('click',clearBoard)
+slideBar.addEventListener("input",updateGrid)
+
+for(let i=0;i<gridSize*gridSize;i++){
+    container.appendChild(div.cloneNode(true));
+    
+}
+ const  grids=document.querySelectorAll('.item');
+
+
+grids.forEach(div=>div.addEventListener('mouseover',changeGridBackground));
+}
 
 
 
