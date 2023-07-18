@@ -1,5 +1,5 @@
 
-let gridSize=16;
+let gridSize=40;
 const container=document.querySelector('.container');
 const div=document.createElement('div');
 div.style.width=`${400/gridSize}px`;

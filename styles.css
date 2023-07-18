@@ -9,6 +9,8 @@ h1{
     font-weight: 900;
     text-align: center;
     margin-bottom: 20px;
+    text-shadow: 4px 4px  3px rgb(116, 112, 112);
+    
 }
 
 .container{
@@ -17,6 +19,9 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex:0 1 auto;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    overflow: hidden;
 }
 .main{
     display: flex;
@@ -38,5 +43,12 @@ white-space: nowrap;
 flex:0 0 auto;
 font-size: 24px;
 font-weight: 900;
+border-radius: 5px;
+border: none;
+box-shadow: 0 0 10px black;
+transition: all 0.7s;
+}
+#btn:hover{
+    transform: scale(1.03);
 
 }
