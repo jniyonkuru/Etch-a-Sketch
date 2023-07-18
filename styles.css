@@ -3,12 +3,15 @@
     padding:0;
     box-sizing: border-box;
 }
+html{
+    color:rgb(80, 77, 77)
+}
 
 h1{
-    font-size: 54px;
+    font-size: 48px;
     font-weight: 900;
-    text-align: center;
-    margin-bottom: 20px;
+    text-align:center;
+    margin-bottom: 50px;
     text-shadow: 4px 4px  3px rgb(116, 112, 112);
     
 }
@@ -20,7 +23,7 @@ h1{
     flex-wrap: wrap;
     flex:0 1 auto;
     box-shadow: 0 0 10px black;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
 }
 .main{
@@ -36,6 +39,7 @@ h1{
     align-items: center;
     justify-content: center;
     flex:0 1 ;
+    gap:20px;
 }
 #btn{
 padding: 8px 20px;
@@ -43,12 +47,20 @@ white-space: nowrap;
 flex:0 0 auto;
 font-size: 24px;
 font-weight: 900;
-border-radius: 5px;
+border-radius: 20px;
 border: none;
 box-shadow: 0 0 10px black;
 transition: all 0.7s;
+color:rgb(80, 77, 77);
 }
 #btn:hover{
     transform: scale(1.03);
 
+}
+.message{
+ width:max-content;
+ height: 50px;
+ font-size:small;
+ color: rgb(238, 4, 4);
+    
 }
