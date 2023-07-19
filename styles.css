@@ -103,11 +103,4 @@ input[type="range"]::-moz-range-track {
  }
 
 
-.message{
- width:max-content;
- height: 50px;
- font-size:small;
- color: rgb(238, 4, 4);
-    
-}
 

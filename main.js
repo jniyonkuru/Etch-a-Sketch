@@ -1,4 +1,6 @@
 
+
+prompt("enter you name","name");
 let gridSize=16;
 const slideBar=document.querySelector('input[type="range"]');
 const sizeDisplay=document.querySelector('.size');
